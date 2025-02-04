@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh
+}
+
+header{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #7CB9E8;
+    background: linear-gradient(178deg, #7CB9E8 70%, transparent 50%);
+    grid-row: 1 / 2;
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+
+h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 28px;
+    padding-top: 10px;
+}
+
+
+
+.header-img{
+    max-width: 350px;
+    height: auto;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3),
+}
+
+.img-container{
+    position: relative;
+    grid-column: 1 / 2;
+    align-self: center;
+    justify-self: end;
+}
+
+.img-overlay{
+    position: absolute;
+    top: 81%;
+    left: 28%;
+    font-size: 25px;
+    background: rgba(255, 255, 255, 0.4);
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.about-me{
+    grid-column: 2 / 3;
+    background-color: white;
+    max-width: 340px;
+    align-self: center;
+    padding: 10px 10px 0px 10px;
+    justify-self: start;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3),  
+    0 5px 10px rgba(0, 0, 0, 0.3),  
+    -5px 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.github-about-me{
+    display: grid;
+    justify-self: end;
+    align-self: end;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+
+main{
+    display: grid;
+    background-color: white;
+    grid-row: 2 / 3;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(415px, 1fr) );
+    padding-top: 20px;
+    padding-bottom: 60px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.footer-container{
+    background-color: #7CB9E8;
+    grid-row: 3 / 4;
+}
+
+.project{
+    display: grid;
+    border-radius: 5px;
+    grid-template-rows: 1.5fr 1fr;
+    box-shadow: 0 -5px 8px rgba(0, 0, 0, 0.2),  /* Top shadow */
+    5px 0 8px rgba(0, 0, 0, 0.2),   /* Right shadow */
+    0 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+h3{
+    font-size: 24px;
+    align-self: center;
+    justify-self: center;
+}
+
+.project-info{
+    background-color: white;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: minmax(50px, 1fr) minmax(100px, 2fr);
+}
+
+.project-name{
+    grid-column: 1 / 2;
+    padding-left: 30px;
+}
+
+.devicon-github-original{
+    font-size: 30px;
+}
+
+.github-project{
+    margin-top: 20px;
+    grid-column: 2 / 3;
+    align-self: center;
+    margin-left: 90px;
+}
+
+
+.project-title-container{
+    display: grid;
+    grid-row: 1 / 2;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+}
+
+.project-description{
+    grid-row: 2 / 3;
+    padding-left: 30px;
+}
+
+.project-1{
+    background-color: red;
+}
+
+.project-2{
+    background-color: rgb(52, 180, 253);
+}
+
+.project-3{
+    background-color: green;
+}
+
+.project-4{
+    background-color: rgb(183, 27, 255);
+}
+
+.project-5{
+    background-color: rgb(255, 179, 64);
+}
+
+.project-6{
+    background-color: rgb(214, 0, 196);
+}
+
+footer{
+    display: grid;
+    background-color: #7CB9E8;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-me-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-self: center;
+    row-gap: 5px;
+}
+
+
+.contact-me-text {
+    margin-top: 10px;
+}
+
+
+.phone-number{
+    padding-right: 50px;
+    margin-top: 25px;
+}
+
+.email{
+    margin-top: 25px;
+}
+
+.contact-item{
+    display: flex;
+    white-space: nowrap;
+    gap: 6px;
+}
+
+.phone-img,
+.email-img {
+    height: auto;
+    max-width: 28px;
+    margin-top: 20px;
+}
+
+
+
+.email-img {
+    margin-bottom: 20px;
+}
+
+.address-one{
+    margin-top: 20px;
+}
+
+.footer-img{
+    max-width: 250px;
+    height: auto;
+    grid-column: 2 / 3;
+    align-self: center;
+    justify-self: center;
+    padding-top: 30px;
+    padding-bottom: 30px;;
+}
